@@ -6,7 +6,12 @@ const AddRecipe =()=>{
     const navigate = useNavigate();
     const addrecipeHandle = (e)=>{
         e.preventDefault();
-        if(Object.keys(addRecipeData).length!==5){
+        let userName = JSON.parse(localStorage.getItem("userID")).userID;
+        console.log(userName)
+        userName = userName.split("@")[0];
+        console.log(userName)
+        setaddRecipeData({...addRecipeData,userName:userName})
+        if(Object.keys(addRecipeData).length!==6){
             return alert('please fill all fields')
           
         }

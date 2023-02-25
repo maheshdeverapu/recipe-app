@@ -80,7 +80,8 @@ router.post("/addRecipe", async(req,res)=>{
             author:req.body.addRecipeData.author,
             image:req.body.addRecipeData.image,
             ingredients:req.body.addRecipeData.ingredients,
-            directions:req.body.addRecipeData.directions
+            directions:req.body.addRecipeData.directions,
+            userName:req.body.addRecipeData.userName
 
         });
       

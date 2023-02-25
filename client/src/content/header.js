@@ -33,18 +33,22 @@ const Header=()=>{
         navigate("/");
     }
     return(
-        <div>
+        <div className="header_content">
 
         
         <div>
 
-            
-            <Link to={"/home"}><p><img className="image_logo" src="https://png.pngitem.com/pimgs/s/79-796935_fork-knife-fork-knife-icon-png-transparent-png.png" alt="logo"></img>home page</p></Link>
+            <Link className="link_Dec" to={"/home"}>
+            <div className="logo_content">
+            <img className="image_logo" src="https://png.pngitem.com/pimgs/s/79-796935_fork-knife-fork-knife-icon-png-transparent-png.png" alt="logo"></img>
+            <p className="logo_text" >Recipe App</p>
+            </div>
+            </Link>
             {/* <input type={"text"} onChange={(e)=>{searchHandle(e)}} value={search}/> */}
 
         </div>
         <div>
-            <button onClick={(e)=>{logoutHandle(e)}}>logout</button>
+            <button className="header_button" onClick={(e)=>{logoutHandle(e)}}>logout</button>
         </div>
         </div>
     )

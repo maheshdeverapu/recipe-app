@@ -7,11 +7,14 @@ const EachRecipe = ({each,index})=>{
     const [eachData,setEachData] = useState(false);
     console.log(each)
     return(
-        <div key={index} className="each_item" onClick={()=>{setEachData(!eachData)}}>
+        < >
+            <div key={index} className="each_item" onClick={()=>{setEachData(!eachData)}}>
             <img className="image" src={each.image} alt='recipe'></img>
             <p>{each.title}</p>
+            <p>Posted by: {each.userName}</p>
+            </div>
             {eachData?<Popup each={each} key={index} setEachData={setEachData} eachData={eachData}/>:""}
-        </div>
+        </>
     )
 }
 export default EachRecipe;

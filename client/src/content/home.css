@@ -1,0 +1,34 @@
+.each_recipe_content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 5px; */
+    /* width: 350px; */
+
+}
+.image_addRecipe{
+    display: flex;
+    flex-direction: column;
+}
+.image_addRecipe>img{
+    align-self: center;
+    width: 100px;
+    margin: 25px 0;
+}
+.search_bar{
+    width: 350px;
+    height: 50px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 20px;
+    border: 0px;
+    color: whitesmoke;
+    align-self: center;
+    
+    /* margin: auto; */
+}
+.search_bar_content{
+    /* width: 100%; */
+    /* margin-left: 200px; */
+    display: flex;
+    flex-direction: column;
+}
