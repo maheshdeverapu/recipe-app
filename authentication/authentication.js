@@ -24,7 +24,7 @@ router.post("/signup",async(req,res)=>{
             confirmPassword:hash
         })
         res.json({
-            message:"successfully registered";
+            message:"successfully registered",
             user
         })
     })
@@ -33,5 +33,17 @@ router.post("/signup",async(req,res)=>{
         error:err.message
     })
 }
+})
+
+router.post("/signin",async(req,res)=>{
+    try{
+        const {userID,password}= req.body;
+        const user = await User.findOne({userID:userID})
+        if(!user){
+            return res.status(422).json({
+                error:"invalid user name or password"
+            })
+        }
+    }
 })
 module.exports = router;
