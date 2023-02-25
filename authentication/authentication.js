@@ -105,17 +105,23 @@ router.post("/addRecipe", async(req,res)=>{
         res.json({
             recipe
         })
-//         let user= await User.findById(req.params.id)
-//    let books=user.books
-//    var book_ids= books.map(function(id){return String(id)});
-//    console.log(book_ids)
-//    let data= await Posts.find({"_id":{$in:book_ids}})   
-// //    console.log(data)
-// //    res.json(data)
-// //         const posts = await Posts.find();
-//         res.json({
-//             data
-//         })
+    }catch(err){
+        res.status(400).json({
+            error:err.message
+        })
+    }
+  })
+  router.get("/getSearchRecipe/:value", async(req,res)=>{
+    try{
+        let recipe = await Post.find({title:{$regex: new RegExp(req.params.value),$options:"i"}});
+        if(!recipe){
+            return res.json({
+                error:"no recipe found, please add some recipe"
+            })
+        }
+        res.json({
+            recipe
+        })
     }catch(err){
         res.status(400).json({
             error:err.message
