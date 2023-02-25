@@ -1,0 +1,7 @@
+database 
+name : RecipeApp
+password:jtIHph73EkswKBu5
+
+
+
+mongodb+srv://RecipeApp:<jtIHph73EkswKBu5>@cluster0.f6ixgkt.mongodb.net/?retryWrites=true&w=majority
