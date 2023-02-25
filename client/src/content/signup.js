@@ -85,8 +85,8 @@ const Signup = ()=>{
                 {/* <label htmlFor={"confirm-password"}>Confirm Password</label> */}
                 <input className="signup-confirm-password" type={"password"} id={"confirm-password"} placeholder={"CONFIRM PASSWORD"} onChange={(event)=>{setConfirm_password(event.target.value)}}></input>
             </div>
-            <div>
-                <input type={"checkbox"} onClick={()=>{setCheckbox(!checkbox)}}/> <p>I Agree with terms and conditions</p>
+            <div className="check_box">
+                <input style={{width:"50px"}} className="checkBox" type={"checkbox"} onClick={()=>{setCheckbox(!checkbox)}}/> <p>I Agree with terms and conditions</p>
             </div>
             <button  className="signup-submit" onClick={(e)=>{signupHandling(e)}}>Signup</button>
             {popUp && (
@@ -95,9 +95,9 @@ const Signup = ()=>{
                 <button inClick={()=>{setPopup("")}}>ok</button>
                 </>
             )}
+            <div>Have an account?<Link  to={"/"}>SignIn</Link></div>
         </form>
         </div>
-            <div className="login-signIn">Have an account?<Link  to={"/"}>SignIn</Link></div>
     </div>
     )
 }

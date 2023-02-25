@@ -8,7 +8,7 @@
 }
 .signup-content{
     position: fixed;
-    width: 500px;
+    width: 600px;
     height: 48vh;
     background-color: white;
     display: flex;
@@ -46,4 +46,12 @@
     text-align: center;
     top: 80vh;
 
+}
+.check_box{
+    display: flex;
+    flex-direction: row;
+
+}
+.check_box>input{
+    width: 60px;
 }
