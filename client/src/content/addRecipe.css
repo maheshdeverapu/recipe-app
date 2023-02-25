@@ -1,0 +1,54 @@
+.addrecipe_content{
+    background-color: rgb(48, 66, 89);
+    height: 100vh;
+    /* margin: auto; */
+}
+.addrecipe_data{
+background-color: rgb(48, 66, 89);
+width: 40%;
+height: 60vh;
+margin: auto;
+padding-top: 80px ;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+/* margin-top: 150px; */
+}
+/* .main_addrecipe{
+    width: 80%;
+} */
+.addrecipe_data>input{
+    width: 50%;
+    height: 35px;
+    background-color: white !important;
+}
+.addrecipe_data>button{
+    width: 50%;
+    height: 35px;
+    border: 2px solid rgb(255, 150, 30);
+    color:rgb(255, 150, 30) ;
+    background-color: rgb(48, 66, 89);
+}
+.addrecipe_data>button:hover{
+    width: 50%;
+    height: 35px;
+    border: 2px solid rgb(48, 66, 89);
+    color:rgb(48, 66, 89) ;
+    background-color: rgb(255, 150, 30);
+}
+.show_recipe{
+    border: 2px solid rgb(255, 150, 30);
+    width: 150px;
+    height: 30px;
+    color:rgb(255, 150, 30) ;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    align-self: flex-start;
+    margin-left: 120px;
+}
+.addrecipe_data>h1,.addrecipe_data>p{
+    color: white;
+}

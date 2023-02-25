@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Router from "./content/router";
 function App() {
   return (
     <div>
-   <p>i am here</p>
+   <Router/>
     </div>
   );
 }
