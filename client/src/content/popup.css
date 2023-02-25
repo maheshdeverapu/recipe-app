@@ -1,0 +1,6 @@
+.popup_content{
+    position:absolute;
+    width: 800px;
+    height: 400px;
+    background-color: aliceblue;
+}

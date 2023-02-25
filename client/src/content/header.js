@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-
+import "./header.css";
 const Header=()=>{
     // const [search,setSearch] = useState("");
     // const [data,setData]= useState([]);
@@ -39,7 +39,7 @@ const Header=()=>{
         <div>
 
             
-            <Link to={"/home"}><p><img src="https://png.pngitem.com/pimgs/s/79-796935_fork-knife-fork-knife-icon-png-transparent-png.png" alt="logo"></img>home page</p></Link>
+            <Link to={"/home"}><p><img className="image_logo" src="https://png.pngitem.com/pimgs/s/79-796935_fork-knife-fork-knife-icon-png-transparent-png.png" alt="logo"></img>home page</p></Link>
             {/* <input type={"text"} onChange={(e)=>{searchHandle(e)}} value={search}/> */}
 
         </div>
